@@ -1,4 +1,4 @@
-package com.example.test
+package com.example.words_randomizer
 
 import org.junit.Test
 

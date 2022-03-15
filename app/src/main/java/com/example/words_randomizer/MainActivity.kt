@@ -1,4 +1,4 @@
-package com.example.test
+package com.example.words_randomizer
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

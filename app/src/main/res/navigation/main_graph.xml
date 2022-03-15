@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/setupFragment"
-        android:name="com.example.test.SetupFragment"
+        android:name="com.example.words_randomizer.SetupFragment"
         android:label="SetupFragment"
         tools:layout="@layout/fragment_setup">
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/wordsGroupsFragment"
-        android:name="com.example.test.WordsGroupsFragment"
+        android:name="com.example.words_randomizer.WordsGroupsFragment"
         android:label="WordsGroupsFragment"
         tools:layout="@layout/fragment_words_groups">
         <argument
@@ -32,7 +32,7 @@
     <fragment
         tools:layout="@layout/fragment_words"
         android:id="@+id/wordsFragment"
-        android:name="com.example.test.WordsFragment"
+        android:name="com.example.words_randomizer.WordsFragment"
         android:label="WordsFragment" >
         <argument
             android:name="words_count"
