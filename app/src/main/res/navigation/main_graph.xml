@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/setupFragment">
+
+    <fragment
+        android:id="@+id/setupFragment"
+        android:name="com.example.test.SetupFragment"
+        android:label="SetupFragment"
+        tools:layout="@layout/fragment_setup">
+        <action
+            android:id="@+id/action_setupFragment_to_wordsGroupsFragment"
+            app:destination="@id/wordsGroupsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wordsGroupsFragment"
+        android:name="com.example.test.WordsGroupsFragment"
+        android:label="WordsGroupsFragment"
+        tools:layout="@layout/fragment_words_groups">
+        <argument
+            android:name="group_count"
+            app:argType="integer" />
+        <argument
+            android:name="words_count"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_wordsGroupsFragment_to_wordsFragment"
+            app:destination="@id/wordsFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_words"
+        android:id="@+id/wordsFragment"
+        android:name="com.example.test.WordsFragment"
+        android:label="WordsFragment" >
+        <argument
+            android:name="words_count"
+            app:argType="integer" />
+    </fragment>
+</navigation>
